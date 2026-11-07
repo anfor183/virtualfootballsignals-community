@@ -1,0 +1,22 @@
+{
+  "name": "puppeteer-bot-root",
+  "version": "1.1.1",
+  "scripts": {
+    "start": "cd dashboard && npm start",
+    "dashboard": "cd dashboard && npm start",
+    "dashboard:dev": "cd dashboard && npm run dev",
+    "dev": "cd dashboard && npm run dev",
+    "build": "cd dashboard && npm run build",
+    "package": "cd dashboard && npm run package",
+    "health": "node utils/check_health.js",
+    "edge:report": "node utils/edge_gate_report.js",
+    "test:edge": "node test_edge_gate.js",
+    "paper:htdraw": "node utils/paper_trader_htdraw.js",
+    "paper:htdraw:watch": "node utils/paper_trader_htdraw.js --watch"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.10.0",
+    "electron": "^42.3.3",
+    "puppeteer": "^25.1.0"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "git.path": "git",
+  "git.enabled": true,
+  "git.autorefresh": true
+}

@@ -1,0 +1,35 @@
+{
+    "DEFAULT/Demo Test": {
+        "description": "forex trader",
+        "mode": "auto",
+        "settings": {
+            "adSkipPercentage": 95,
+            "watchScrollPercentage": 80,
+            "suggestedVideoClickPercentage": 70
+        }
+    },
+    "DEFAULT/demo test 2": {
+        "description": "tech guru",
+        "mode": "auto",
+        "settings": {
+            "adSkipPercentage": 85,
+            "watchScrollPercentage": 70,
+            "suggestedVideoClickPercentage": 80,
+            "behaviorChangeFrequency": 45,
+            "searchPage1ScrollChance": 90,
+            "searchPage2ScrollChance": 60,
+            "searchPage3ScrollChance": 30,
+            "searchPage4ScrollChance": 10,
+            "searchPage5ScrollChance": 5,
+            "likePercentage": 60,
+            "commentPercentage": 40,
+            "minWatchMinutes": 3,
+            "maxWatchMinutes": 15,
+            "minAdInteractionSeconds": 10,
+            "maxAdInteractionSeconds": 45,
+            "adPageInnerClickPercentage": 20,
+            "playbackSpeed2xPercentage": 70,
+            "enableSubtitlesPercentage": 50
+        }
+    }
+}

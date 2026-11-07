@@ -1,0 +1,199 @@
+{
+  "lastTrainedAt": "2026-09-17T11:49:24.180Z",
+  "lastTrainedRows": 19950,
+  "totalRuns": 465,
+  "lastDurationMs": 422190,
+  "lastStatus": "completed",
+  "modelReports": {
+    "safest": {
+      "engine": "safest_xgboost",
+      "trained_on": 10998,
+      "folds": [
+        {
+          "fold": 1,
+          "test_n": 2199,
+          "thresh": 0.77,
+          "roi": 9.79,
+          "n": 24,
+          "profitable": true
+        },
+        {
+          "fold": 2,
+          "test_n": 2199,
+          "thresh": 0.69,
+          "roi": -1.67,
+          "n": 93,
+          "profitable": false
+        },
+        {
+          "fold": 3,
+          "test_n": 2199,
+          "thresh": 0.61,
+          "roi": -3.52,
+          "n": 294,
+          "profitable": false
+        },
+        {
+          "fold": 4,
+          "test_n": 2199,
+          "thresh": 0.77,
+          "roi": 24,
+          "n": 5,
+          "profitable": true
+        }
+      ],
+      "profitable_folds": 2,
+      "avg_oos_roi": 7.15,
+      "final_threshold": 0.73,
+      "ready_for_deployment": false
+    },
+    "highChance": {
+      "engine": "high_chance_xgboost",
+      "trained_on": 19940,
+      "avg_oos_roi": 18.26,
+      "profitable_folds": 4,
+      "over25": {
+        "cv_folds": [
+          {
+            "fold": 1,
+            "test_n": 3988,
+            "thresh": 0.75,
+            "roi": 15.04,
+            "n": 139,
+            "profitable": true
+          },
+          {
+            "fold": 2,
+            "test_n": 3988,
+            "thresh": 0.75,
+            "roi": 33.42,
+            "n": 57,
+            "profitable": true
+          },
+          {
+            "fold": 3,
+            "test_n": 3988,
+            "thresh": 0.775,
+            "roi": 22.78,
+            "n": 27,
+            "profitable": true
+          },
+          {
+            "fold": 4,
+            "test_n": 3988,
+            "thresh": 0.7,
+            "roi": 10.42,
+            "n": 83,
+            "profitable": true
+          }
+        ],
+        "profitable_folds": 4,
+        "avg_oos_roi": 20.42
+      },
+      "gg": {
+        "cv_folds": [
+          {
+            "fold": 1,
+            "test_n": 3988,
+            "thresh": 0.35,
+            "roi": 8.77,
+            "n": 2372,
+            "profitable": true
+          },
+          {
+            "fold": 2,
+            "test_n": 3988,
+            "thresh": 0.775,
+            "roi": 21.74,
+            "n": 23,
+            "profitable": true
+          },
+          {
+            "fold": 3,
+            "test_n": 3988,
+            "thresh": 0.75,
+            "roi": 21.74,
+            "n": 23,
+            "profitable": true
+          },
+          {
+            "fold": 4,
+            "test_n": 3988,
+            "thresh": 0.575,
+            "roi": 12.15,
+            "n": 988,
+            "profitable": true
+          }
+        ],
+        "profitable_folds": 4,
+        "avg_oos_roi": 16.1
+      },
+      "ready_for_deployment": true
+    },
+    "htft": {
+      "trained_on": 19950,
+      "n_classes": 9,
+      "htft_labels": [
+        "htft11",
+        "htft1X",
+        "htft12",
+        "htftX1",
+        "htftXX",
+        "htftX2",
+        "htft21",
+        "htft2X",
+        "htft22"
+      ],
+      "walk_forward_folds": [
+        {
+          "fold": 1,
+          "train_n": 5985,
+          "test_n": 2793,
+          "top1_accuracy": 19.69,
+          "log_loss": 2.0253,
+          "simulated_roi": 37.63
+        },
+        {
+          "fold": 2,
+          "train_n": 8778,
+          "test_n": 2793,
+          "top1_accuracy": 19.58,
+          "log_loss": 2.043,
+          "simulated_roi": 30.53
+        },
+        {
+          "fold": 3,
+          "train_n": 11571,
+          "test_n": 2793,
+          "top1_accuracy": 19.66,
+          "log_loss": 2.0575,
+          "simulated_roi": 47.17
+        },
+        {
+          "fold": 4,
+          "train_n": 14364,
+          "test_n": 2793,
+          "top1_accuracy": 18.44,
+          "log_loss": 2.0645,
+          "simulated_roi": 37.35
+        },
+        {
+          "fold": 5,
+          "train_n": 17157,
+          "test_n": 2793,
+          "top1_accuracy": 17.69,
+          "log_loss": 2.0835,
+          "simulated_roi": 45.92
+        }
+      ],
+      "profitable_folds": 5,
+      "avg_oos_roi": 39.72,
+      "ready_for_deployment": true
+    }
+  },
+  "lastOptimizedAt": "2026-09-17T09:17:21.222Z",
+  "lastOptimizedTrimmed": 30,
+  "lastOptimizedRemaining": 20000,
+  "lastOptimizedDurationMs": 58,
+  "lastOptimizedReason": "Training set contains 20,030 matches (> 25,000 threshold). Trimming to the newest 20,000 matches removes stale noise and speeds up training."
+}

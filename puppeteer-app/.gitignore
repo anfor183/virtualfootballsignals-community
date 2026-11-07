@@ -1,0 +1,101 @@
+# ===========================
+# Node / Dependencies
+# ===========================
+node_modules/
+package-lock.json
+
+# ===========================
+# Chrome / Browser Binaries
+# ===========================
+chrome/
+# Keep chrome dir structure but not binaries
+!chrome/.gitkeep
+
+# ===========================
+# User Profiles (browser data - contains personal session data)
+# ===========================
+profiles/
+
+# ===========================
+# Scratch / Debug files
+# ===========================
+scratch/
+scratch_*.html
+scratch_*.js
+*.log
+deepseek_visual_errors.log
+logs/
+
+# ===========================
+# Dashboard Build Output
+# ===========================
+dashboard/dist/
+dashboard/out/
+dashboard/node_modules/
+dashboard/package-lock.json
+
+# ===========================
+# Sensitive Config / Keys
+# ===========================
+# Keep browser-config.json but strip API keys before committing
+# bot_settings.json  # Keeping - contains output dir settings
+
+# ===========================
+# OS / Editor
+# ===========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# ===========================
+# Temp / Misc
+# ===========================
+*.tmp
+*.bak
+proxies.json
+
+# Exclude browser profiles, temp dashboard files, and local test profiles
+browser_profiles/
+dashboard/temp/
+utils/Demo test desktop_sportybet/
+.tmp.driveupload/
+
+# ===========================
+# Local Databases & Scratch JSON
+# ===========================
+*.db
+*.sqlite
+*.sqlite3
+databases/
+scratch_*.json
+*.weights.json
+*.learning.json
+browser-config.json
+bot_settings.json
+
+# Screenshots & Local Scratch
+*.png
+temp.js
+scratch_dump.txt
+brave_extracted/
+catboost_info/
+
+
+# Independent adaptive model bundles and runtime state
+utils/adaptive_models/
+utils/*_market_active.json
+utils/*_market_report.json
+utils/*_market_candidate_report.json
+utils/*_market_monitor.json
+utils/*_market_training.lock
+auto_training.lock
+
+__pycache__/
+*.pyc
+utils/policy_evidence_runtime.json
+utils/policy_evidence_runtime.lock
+utils/*_strategy_gate.json
+utils/strategy_release.lock

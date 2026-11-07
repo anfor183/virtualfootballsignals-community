@@ -1,0 +1,177 @@
+{
+    "paths": {
+        "chrome": "C:\\path\\to\\chrome.exe",
+        "chrome1": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "userDataDir": "C:\\path\\to\\user\\profile",
+        "profilePath": "Default",
+        "cursorPath": "puppeteer-app\\gold_mouse.png"
+    },
+    "proxy": {
+        "enabled": false,
+        "username": "",
+        "password": "",
+        "host": "p.webshare.io",
+        "port": "80",
+        "protocol": "http",
+        "residential": {
+            "enabled": false,
+            "tunnelPort": 3080,
+            "proxyPort": 1080,
+            "authToken": "",
+            "ipUpdaterEnabled": true,
+            "ipUpdaterPort": 3081,
+            "useForBot": true
+        },
+        "fallback": {
+            "useDirectConnection": false,
+            "maxRetries": 3
+        },
+        "scamalytics": {
+            "enabled": false,
+            "hostname": "api.scamalytics.com",
+            "username": "",
+            "apiKey": "",
+            "maxRiskScore": 50
+        }
+    },
+    "privacy": {
+        "webrtc": {
+            "block": true
+        },
+        "fingerprint": {
+            "overrideDate": false,
+            "overrideWebGL": true,
+            "overrideHardware": true,
+            "overrideUserAgentData": true
+        }
+    },
+    "hardware": {
+        "acceleration": {
+            "enabled": true,
+            "canvas": "hardware",
+            "pageVisibility": true,
+            "media": {
+                "videoDecoding": "hardware",
+                "audioProcessing": "hardware",
+                "gpuRasterization": true,
+                "d3d11VideoDecoding": true,
+                "windowsOptimizations": true
+            }
+        }
+    },
+    "maintenance": {
+        "smartClear": {
+            "frequency": "manually",
+            "preserveGoogleSession": true,
+            "lastRun": null
+        }
+    },
+    "automation": {
+        "youtubeTarget": "Jeffrey Benson Forex",
+        "adSkipPercentage": 25,
+        "adWatchPercentage": 50,
+        "adClickPercentage": 25,
+        "watchScrollPercentage": 30,
+        "searchPage1ScrollChance": 100,
+        "searchPage2ScrollChance": 80,
+        "searchPage3ScrollChance": 50,
+        "searchPage4ScrollChance": 20,
+        "searchPage5ScrollChance": 0,
+        "suggestedVideoClickPercentage": 10,
+        "likePercentage": 10,
+        "commentPercentage": 3,
+        "commentMode": "ai",
+        "customComments": [
+            "Great video!",
+            "Really informative, thanks!",
+            "Awesome content!",
+            "Keep it up!",
+            "So helpful!"
+        ],
+        "minWatchMinutes": 3,
+        "maxWatchMinutes": 10,
+        "minAdInteractionSeconds": 15,
+        "maxAdInteractionSeconds": 60,
+        "adPageInnerClickPercentage": 30,
+        "playbackSpeed2xPercentage": 5,
+        "enableSubtitlesPercentage": 10,
+        "volumeChangePercentage": 20,
+        "customWebsiteUrl": ""
+    },
+    "ai": {
+        "aiOptimizerEnabled": true,
+        "deepseekApiKey": "",
+        "provider": "anthropic",
+        "openaiApiKey": "",
+        "anthropicApiKey": "",
+        "highRiskThreshold": 60,
+        "highRiskMinOdds": 3.3,
+        "edgeBacktestWindow": 100,
+        "edgeMinSamples": 10,
+        "edgeSignalMinProbability": 55,
+        "edgeWinRateThreshold": 0.56,
+        "edgeRoiThreshold": 0.05,
+        "edgeOddsMin": 4,
+        "edgeOddsMax": 50,
+        "edgeUseAcrossSeasons": true,
+        "edgeCrossSeasonMinSeasonCount": 2,
+        "edgeBoostStrength": 10,
+        "edgeCooldownRounds": 3
+    },
+    "clickQuota": {
+        "daily": 3,
+        "weekly": 21,
+        "monthly": 90,
+        "current": {
+            "daily": 0,
+            "weekly": 0,
+            "monthly": 0,
+            "lastReset": {
+                "daily": "2026-05-16T16:53:43.778Z",
+                "weekly": "2026-05-16T16:53:43.778Z",
+                "monthly": "2026-05-16T16:53:43.778Z"
+            }
+        }
+    },
+    "ui": {
+        "palette": "emerald"
+    },
+    "randomWeights": {
+        "device": {
+            "desktop": 35,
+            "mac": 10,
+            "linux": 5,
+            "mobile": 50
+        },
+        "browser": {
+            "chrome": 65,
+            "firefox": 10,
+            "safari": 18,
+            "edge": 7
+        }
+    },
+    "googleDriveSync": {
+        "enabled": false,
+        "mode": "local",
+        "localPath": "",
+        "serviceAccountJson": "",
+        "accessToken": "",
+        "interval": "manually",
+        "syncScope": {
+            "config": true,
+            "personalities": true,
+            "proxies": true,
+            "fingerprints": true,
+            "profiles": false
+        },
+        "lastSync": "2026-05-16T23:40:23.606Z",
+        "nextSync": null
+    },
+    "dbScheduler": {
+        "enabled": false,
+        "intervalHours": 24,
+        "mode": "llm",
+        "lastRun": null,
+        "nextRun": null
+    }
+}

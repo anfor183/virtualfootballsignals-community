@@ -1,0 +1,28 @@
+name: Verify package assets
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  verify:
+    name: Run verify-package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies (dashboard)
+        run: |
+          cd dashboard
+          npm ci
+
+      - name: Run verify-package
+        run: |
+          cd dashboard
+          npm run verify-package

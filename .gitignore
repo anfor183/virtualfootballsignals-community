@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Package lock
+package-lock.json
+
+# Temporary / Build Artifacts
+diff.txt
+out/
+dist/
+**/out/
+**/dist/
+.tmp.driveupload/
+
+# Databases & SQLite Journals
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+puppeteer-app/*.db
+puppeteer-app/*.sqlite
+puppeteer-app/*.sqlite3
+puppeteer-app/databases/
+puppeteer-app/scratch_*.json
+puppeteer-app/*.weights.json
+puppeteer-app/*.learning.json
+puppeteer-app/*.timers.json
+database/*.json
+*.timers.json
+*.learning.json
+puppeteer-app/browser-config.json
+puppeteer-app/bot_settings.json
+
+# Browser Profiles & Chrome Cache
+puppeteer-app/profiles_sportybet/
+puppeteer-app/profiles_bet9ja/
+puppeteer-app/profiles_betking/
+**/profiles_*/
+*.pma
+*.pid
+*.log
+
+# Helper push scripts
+puppeteer-app/push_via_api.js
+push_via_api.js
+puppeteer-app/push_to_github.js
+push_to_github.js
+
+# Virtual Environments & Python Cache
+venv/
+**/venv/
+__pycache__/
+*.pyc
+
+# Local deploy & reports
+deploy/vps_target.txt
+**/reports/
+ai_learning_state.json

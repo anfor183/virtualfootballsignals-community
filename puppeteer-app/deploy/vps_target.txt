@@ -1,0 +1,1 @@
+ubuntu@YOUR_VPS_IP
